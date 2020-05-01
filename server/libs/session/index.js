@@ -18,7 +18,7 @@ module.exports = function (inputConfig) {
       secure: false,
       maxAge: self.options.sessionTTL || config.ttl
     },
-    secret: self.sessionSecret || config.secret,
+    secret: self.options.sessionSecret || config.secret,
     resave: false,
     saveUninitialized: false
   });
