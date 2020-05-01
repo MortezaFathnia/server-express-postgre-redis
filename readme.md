@@ -39,6 +39,8 @@ Install node dependencies with `npm`
 
 > npm i
 
+Start your Redis server and Database agent.
+
 Run `index.js` with node or pm2 and pass the environment
 
 > node index.js
