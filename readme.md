@@ -95,3 +95,21 @@ GET localhost:8080/api/example/hello
                        |       http handler
                        |
                      path to folder contains index.js 
+```
+
+2) Defining Access
+
+Add new record to **acls** table in database
+
+```
+id------user_id------role------access------createdAt------updatedAt
+
+1       null         guest     crud        null           null		
+```
+
+Add this characters for these operations:
+
+- **c** for `post` method
+- **r** for `get` method
+- **u** for `put` method
+- **d** for `delete` method
