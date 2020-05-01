@@ -1,4 +1,4 @@
-MJS-SERVER
+Express-Server
 ======
 
 Simple `express` server.
