@@ -15,6 +15,10 @@ module.exports = function (sequelize) {
       type: Sequelize.STRING,
       allowNull: true
     },
+    path: {
+      type: Sequelize.STRING,
+      allowNull: false
+    },
     access: {
       type: Sequelize.STRING,
       allowNull: false

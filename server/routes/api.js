@@ -109,6 +109,7 @@ function handler(req, res) {
           { user_id: req.user.id || null },
           { role: req.user.role }
         ],
+        path: `${api}/${controller}`,
         access: {
           [self.db.Op.like]: access
         }

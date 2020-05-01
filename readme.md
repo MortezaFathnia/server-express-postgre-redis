@@ -104,9 +104,9 @@ GET localhost:8080/api/example/hello
 Add new record to **acls** table in database
 
 ```
-id------user_id------role------access------path--------------createdAt------updatedAt
+id------user_id------role------access------path------------------createdAt------updatedAt
 
-1       null         guest     crud        /api/example      null           null		
+1       null         guest     crud        /api/example/hello    null           null		
 ```
 
 Add this characters for these operations:
