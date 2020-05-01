@@ -117,7 +117,7 @@ function handler(req, res) {
     })
       .then((acl) => {
         if (!acl.length) {
-          self.log.verbose(`authorization error for ${req.user.username} to ${method}:${api}/${controller}`)
+          self.log.verbose(`authorization error for ${req.user.username || req.user.role} to ${method}:${api}/${controller}`)
           res.status(401).send('Unauthorized');
         }
         else {
