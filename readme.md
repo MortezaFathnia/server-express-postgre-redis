@@ -46,3 +46,52 @@ Run `index.js` with node or pm2 and pass the environment
 > node index.js
 
 > pm2 start index.js
+
+## Components
+
+- [x] Authentication
+- [x] Authorize
+- [x] Role-based client side
+- [x] Session
+- [x] Logger
+- [x] Db connection
+- [ ] Uploading file
+- [ ] Streaming data
+- [ ] Chat system
+- [ ] Clustering
+
+
+## Rules
+
+1) Defining Api
+
+Put your new API in `/server/api` folder
+
+Create `example` folder and put `index.js` file inside.
+
+Your `index.js` file should be export an object with this structure:
+
+```js
+module.exports = {
+  hello: {
+    GET: controller.hello,
+    POST: controller.hello,
+    DELETE: controller.hello,
+    PUT: controller.hello
+  }
+};
+```
+
+Your can request to your new api with this:
+
+[method] url:port/api/[path-to-api]/[http-handler]
+
+For example
+
+```
+GET localhost:8080/api/example/hello
+                       ^       ^
+                       |       |
+                       |       http handler
+                       |
+                     path to folder contains index.js 

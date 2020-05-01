@@ -16,7 +16,7 @@ module.exports = function (inputConfig) {
       path: '/',
       httpOnly: true,
       secure: false,
-      maxAge: self.sessionTTL || config.ttl
+      maxAge: self.options.sessionTTL || config.ttl
     },
     secret: self.sessionSecret || config.secret,
     resave: false,
