@@ -52,7 +52,7 @@ Run `index.js` with node or pm2 and pass the environment
 ## Components
 
 - [x] Authentication
-- [ ] Authorize
+- [x] Authorize
 - [x] Role-based client side
 - [x] Session
 - [x] Logger
