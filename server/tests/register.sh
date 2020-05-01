@@ -1,0 +1,1 @@
+curl -X POST http://localhost:8080/login -b cookie-file.txt -H 'Content-Type: application/json' -d '{"username":"registered", "password":"123456"}'

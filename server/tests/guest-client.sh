@@ -1,0 +1,1 @@
+curl -X GET http://localhost:8080/test.txt -H 'Content-Type: application/json'

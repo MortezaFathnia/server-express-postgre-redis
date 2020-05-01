@@ -1,0 +1,1 @@
+curl -X GET http://localhost:8080/api/example/hello -b cookie-file.txt -H 'Content-Type: application/json'
