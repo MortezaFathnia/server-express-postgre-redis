@@ -52,7 +52,7 @@ Run `index.js` with node or pm2 and pass the environment
 ## Components
 
 - [x] Authentication
-- [x] Authorize
+- [ ] Authorize
 - [x] Role-based client side
 - [x] Session
 - [x] Logger
@@ -104,9 +104,9 @@ GET localhost:8080/api/example/hello
 Add new record to **acls** table in database
 
 ```
-id------user_id------role------access------createdAt------updatedAt
+id------user_id------role------access------path--------------createdAt------updatedAt
 
-1       null         guest     crud        null           null		
+1       null         guest     crud        /api/example      null           null		
 ```
 
 Add this characters for these operations:
