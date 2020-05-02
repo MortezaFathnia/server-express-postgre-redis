@@ -82,7 +82,7 @@ module.exports = function () {
   let self = this;
 
   router.post('/login', login.bind(self));
-  router.post('/register', register.bind(self));
+  router.post('/register', self.ValidationRule.Register, self.validate, register.bind(self));
   router.post('/logout', logout.bind(self));
 
   return router;

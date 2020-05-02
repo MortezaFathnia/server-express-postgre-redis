@@ -57,6 +57,7 @@ Run `index.js` with node or pm2 and pass the environment
 - [x] Session
 - [x] Logger
 - [x] Db connection
+- [x] Data Validation
 - [ ] Uploading file
 - [ ] Streaming data
 - [ ] Chat system
