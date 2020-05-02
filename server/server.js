@@ -12,6 +12,7 @@ const General = require('./routes/general');
 const logger = require('./libs/logger');
 const session = require('./libs/session');
 const Authentication = require('./libs/authentication');
+const validation = require('./libs/validation');
 
 class Server {
 
@@ -23,6 +24,10 @@ class Server {
 
     // create logger for specified env
     self.log = logger(self.options.env);
+
+    // Adding validation method and rules to self
+    self.validate = validation.validate;
+    self.ValidationRule = validation.Rule;
 
     self.connect2Db();
     self.attachMiddlewares();
