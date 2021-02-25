@@ -72,7 +72,7 @@ Put your new API in `/server/api` folder
 
 Create `example` folder and put `index.js` file inside.
 
-Your `index.js` file should be export an object with this structure:
+Your `index.js` file should export an object with this structure:
 
 ```js
 module.exports = {
