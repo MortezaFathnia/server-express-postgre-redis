@@ -7,18 +7,27 @@ module.exports = function (sequelize) {
 
   User.init({
     // attributes
-    username: {
+    name: {
       type: Sequelize.STRING,
       allowNull: false
     },
-    password: {
+    address: {
       type: Sequelize.STRING,
       allowNull: false
     },
-    role: {
+    email: {
       type: Sequelize.STRING,
       allowNull: false
-    }
+    },
+    phone: {
+      type: Sequelize.NUMBER,
+      allowNull: true
+    },
+    id: {
+      type: Sequelize.NUMBER,
+      primaryKey: true,
+      allowNull: false
+    },
   },
     {
       sequelize,

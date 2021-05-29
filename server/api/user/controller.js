@@ -4,7 +4,15 @@ function hello(data) {
     test: 'hello'
   });
 }
-
+function getUser() {
+  this.log.silly(`In user controller, data: ${JSON.stringify(data)}`);
+  // const users = await User.findAll();
+  // console.log(1123,users); 
+  return Promise.resolve({
+    test: 'hello'
+  });
+}
 module.exports = {
-  hello: hello
+  hello: hello,
+  getUser: getUser
 };

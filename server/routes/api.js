@@ -48,6 +48,7 @@ function handler(req, res) {
   let self = this;
 
   let api = extractApi(req.baseUrl);
+  console.log('>>>>>>>>>>>>>>>>>>>112',apiList)
   let method = req.method.toUpperCase();
 
   let urlParts = req.baseUrl.split('/');
